@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-navy-50: #f4f6f9;
+  --color-navy-100: #e2e8f0;
+  --color-navy-200: #cbd5e1;
+  --color-navy-300: #94a3b8;
+  --color-navy-400: #64748b;
+  --color-navy-500: #475569;
+  --color-navy-600: #1e293b;
+  --color-navy-700: #0f172a;
+  --color-navy-800: #0a0f1d;
+  --color-navy-900: #030712;
+  
+  --color-gold-50: #fdfbf7;
+  --color-gold-100: #faf1db;
+  --color-gold-200: #f3dfb2;
+  --color-gold-300: #ebca85;
+  --color-gold-400: #e1b158;
+  --color-gold-500: #cca044;
+  --color-gold-600: #b58636;
+  --color-gold-700: #976b2c;
+  --color-gold-800: #7c5427;
+  --color-gold-900: #664323;
+
+  --font-sans: "Outfit", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    background-color: #fafbfc;
+    color: #1e293b;
+    font-family: var(--font-sans);
+  }
+}
+
+/* Custom fade effects and utility styles */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #cca044 0%, #ebca85 50%, #976b2c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navy-gradient {
+  background: linear-gradient(135deg, #0f172a 0%, #030712 100%);
+}
+
+.gold-border {
+  border-image: linear-gradient(to right, #976b2c, #ebca85, #cca044) 1;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #c5a85c;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #976b2c;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "다낭 세이프홈 (SafeHome Da Nang)",
+  "description": "베트남 다낭 외국인 아파트 및 콘도텔 합법 취득 권리분석 및 맞춤형 부동산 상담 플랫폼",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
